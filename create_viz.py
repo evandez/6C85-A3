@@ -94,5 +94,5 @@ example_rect = plt.Rectangle(
 )
 ax.add_patch(example_rect)
 
-# Show plot
+# Save plot.
 plt.savefig("figures/final_viz.png")

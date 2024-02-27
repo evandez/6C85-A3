@@ -20,12 +20,23 @@
 
 	<main>
 		<section>
+			<h2>Question</h2>
+			<p><u>How has life expectancy changed between 1900 and 2000?</u> We cannot exactly
+				measure this from the data given, but we can approximate it by studying the age
+				distribution in each time period. My sketches attempt to do this in three different
+				ways.</p>
+		</section>
+		<section>
 			<h2>Phase One: Sketching Visualizations</h2>
 
 			<figure>
 				<img src="./figures/sketch_1.png" alt="" style="height: 400px; width: 400px;" />
 				<figcaption>
-					BRIEF CAPTION HERE.
+					Age distribution of the US population in 1900 and 2000. One hundred years ago,
+					the population was primarily young, and living longer appears to have been a
+					luxury, as the size of the age groups decreases uniformly with age.
+					As of 2000, the distribution is wider and bimodal, with middle-aged
+					adults comprisng the majority group.
 				</figcaption>
 			</figure>
 
@@ -34,15 +45,32 @@
 			</p>
 
 			<ul>
-				<li>RATIONALE_1</li>
-				<li>RATIONALE_2</li>
-				<li>RATIONALE_3</li>
+				<li>Idea behind this sketch was to nod to traditional <a
+					   href="https://en.wikipedia.org/wiki/Population_pyramid"
+					   target="_blank">population pyramid</a> designs used in medicine, but
+					intentionally make it an asymmetric pyramid</li>
+				<li>This Design normalizes out sex differences (by lumping them together) and scale
+					differences (by using percentages, not counts) to focus on distributional shape
+				</li>
+				<li>(Pro) The main advantage of this is it translates the statistical shapes of the
+					populations into a physical
+					shape, and visually contrasts them; you don't need to look at the numbers to see
+					the difference</li>
+				<li>(Pro) Naturally supports visual representations of summary statistics, like
+					median markers for each year</li>
+				<li>(Con) Loses some information about the scales of the populations; this
+					information is still somewhat related to the question</li>
+				<li>(Con) Might be confusing at first <i>because</i> it is a nontraditional use of a
+					population pyramid</li>
 			</ul>
 
 			<figure>
 				<img src="./figures/sketch_2.png" alt="" style="height: 400px; width: 800px;" />
 				<figcaption>
-					BRIEF CAPTION HERE.
+					Dot matrices for the US population in 1900 and 2000, broken down by stage of
+					life. Very few people in this time period lived to be elderly, and most were
+					young children or adults. In 2000, the population is much larger in scale, and
+					elderly people comprise a much larger portion of it.
 				</figcaption>
 			</figure>
 
@@ -51,15 +79,31 @@
 			</p>
 
 			<ul>
-				<li>RATIONALE_1</li>
-				<li>RATIONALE_2</li>
-				<li>RATIONALE_3</li>
+				<li>Previous sketch ignored scale; this vis very intentionally does not. Number of
+					dots corresponds to population counts, hence many additional dots in 2000</li>
+				<li>Uses a coarser age grouping (child, adult, elderly) because using all 5-year age
+					groups would result in visual overload</li>
+				<li>Still normalizes out sex information because it is not very relevant to the
+					question</li>
+				<li>(Pro) Communicates distributional information using color and
+					pattern/repetition; again, reader would not need to look at numbers to get the
+					point</li>
+				<li>(Pro) Coarser age grouping is much simpler to understand</li>
+				<li>(Pro) Visualizes the scale of the populations</li>
+				<li>(Con) Normalizes out some important information, e.g. it wouldn't show the
+					apparent
+					bi-modal shape of the 2000 census data</li>
+				<li>(Con) A little harder to visually represent summary stats</li>
 			</ul>
 
 			<figure>
 				<img src="./figures/sketch_3.png" alt="" style="height: 400px; width: 500px" />
 				<figcaption>
-					BRIEF CAPTION HERE.
+					Change in the proportion of each age group in the US population form 1900 to
+					2000, broken down by sex.
+					Young to middle-aged adults have decreased in proportion, while the elderly
+					population has increased substantially, likely due to the better life expectancy
+					of the modern day. There are no noticeable differences between the sexes.
 				</figcaption>
 			</figure>
 
@@ -68,9 +112,22 @@
 			</p>
 
 			<ul>
-				<li>RATIONALE_1</li>
-				<li>RATIONALE_2</li>
-				<li>RATIONALE_3</li>
+				<li>Both previous plots ignored sex information and separately visualized each year.
+					This sketch attempts to do both of those things differently</li>
+				<li>Focuses specifically on the <i>change</i> in each age group over the century,
+					with the goal of showing that concentration has shifted heavily toward an
+					older/adult + elderly population</li>
+				<li>Bar chart format naturally lends itself to stacking, so we can see changes in
+					male and female subpopulations</li>
+				<li>The focal point would be toward the end of the plot, where the increase in
+					elderly population would be quite sharp</li>
+				<li>(Pro) Bar charts are easy to parse, and there is low risk for visual overload
+					here</li>
+				<li>(Con) Deltas are confusing, especially in this stacked format; e.g., requires a
+					lot of reflective processing to determine whether male or female changed more
+				</li>
+				<li>(Con) Would not easily support case where, e.g., percent of men increased but
+					percent of women decreased, though I think this is unlikely</li>
 			</ul>
 
 			<h3>Reflection</h3>
@@ -85,7 +142,7 @@
 			<h2>Phase Two: Final Design</h2>
 
 			<figure>
-				<img src="./figures/final_viz.png" alt="" />
+				<img src="./figures/final_viz.png" alt="" style="height: auto; max-width: 100%;" />
 				<figcaption>
 					ENTER IMAGE CAPTION HERE.
 				</figcaption>
