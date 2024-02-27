@@ -3,5 +3,6 @@ isort
 matplotlib
 numpy
 pandas
+pandas-stubs
 pyright
 seaborn
